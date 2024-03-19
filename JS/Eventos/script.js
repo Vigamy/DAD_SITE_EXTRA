@@ -3,6 +3,7 @@ const body = document.getElementsByTagName("body")[0];
 let img = "";
 const listaTarefas = document.getElementById("lista-tarefas");
 const listaTarefasJS = [];
+const listaConcluidas = [];
 restaurarTarefas();
 
 function criarImg() {
@@ -36,6 +37,9 @@ function criarTarefa() {
     tarefa.classList.add("tarefas-style");
     tarefa.addEventListener("click", () => {
       tarefa.classList.toggle("tarefa-concluida");
+      if (!listaConcluidas.includes(tarefa.textContent)) {
+        listaConcluidas.push(tarefa.textContent);
+      }
     });
     // criando o Xzin
     const img = document.createElement("img");
@@ -64,23 +68,26 @@ function limparTarefas() {
 
 //Salvar Tarefas
 function salvarTarefas() {
+  console.log(listaConcluidas);
   // localStorage.removeItem("tarefas");
   localStorage.setItem("tarefas", JSON.stringify(listaTarefasJS));
-  console.log(listaTarefasJS);
+  localStorage.setItem("concluidas", JSON.stringify(listaConcluidas));
 }
 
 //Restaurar Tarefas
 function restaurarTarefas() {
   // Pegar lista salva
   const tarefasRest = JSON.parse(localStorage.getItem("tarefas"));
+  const tarefasConc = JSON.parse(localStorage.getItem("concluidas"));
   console.log(tarefasRest);
+  console.log(tarefasConc);
+
   // criando elemento de tarefa
   for (let i = 0; i < tarefasRest.length; i++) {
     let tarefa = document.createElement("li");
     tarefa.textContent = tarefasRest[i];
-    console.log(tarefa);
     tarefa.classList.add("tarefas-style");
-
+    
     // criando o Xzin
     const img = document.createElement("img");
     img.setAttribute("src", "./img/x.png");
@@ -92,8 +99,23 @@ function restaurarTarefas() {
       if (indice !== -1) {
         listaTarefasJS.splice(i, 1);
       }
+    });
 
-      console.log(listaTarefasJS);
+    //fazer ela se tornar riscável
+    tarefa.addEventListener("click", () => {
+      tarefa.classList.toggle("tarefa-concluida");
+
+      //Adicionar na lista de concluidas
+      if (!listaConcluidas.includes(tarefa.textContent)) {
+        listaConcluidas.push(tarefa.textContent);
+        console.log("Inclui\n" + listaConcluidas);
+      } else {
+        const indice = listaConcluidas.indexOf(tarefa.textContent);
+        if (indice !== -1) {
+          listaConcluidas.splice(indice, 1);
+          console.log("Tira" + listaConcluidas);
+        }
+      }
     });
 
     //adicionando o elemento
