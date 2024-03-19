@@ -1,0 +1,81 @@
+body {
+  /* background: linear-gradient(-110, lightblue, lightcoral); */
+  background-color: aliceblue;
+}
+
+.btn {
+  background-color: rgb(0, 93, 232);
+  width: fit-content;
+  padding: 16px 24px;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 4px 4px darkblue;
+}
+.btnTarefa {
+  background-color: rgb(0, 93, 232);
+  width: fit-content;
+  padding: 16px 24px;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  user-select: none;
+  box-shadow: 4px 4px darkblue;
+}
+
+/*Botão não selecionavel*/
+.naoSelecionavel {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none; /* Possível implementação no futuro */
+  /* cursor: default; */
+}
+
+.meme {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.input {
+  border: 2px solid;
+  border-radius: 4px;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 4px 4px blue;
+}
+
+#lista-tarefas {
+  border: 2px solid darksalmon;
+  box-shadow: 4px 4px darkorange;
+  background-color: antiquewhite;
+  width: fit-content;
+  margin: auto;
+  padding: 4px 4px;
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tarefas-style > li {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgb(221, 63, 0);
+}
+
+.tarefa-concluida {
+  text-decoration: line-through;
+}
+
+.xzinho {
+  width: 10px;
+  margin-left: 15px;
+}
+/*INPUT de tarefas*/
+/* #tarefa {
+} */

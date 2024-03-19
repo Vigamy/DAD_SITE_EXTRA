@@ -1,0 +1,6 @@
+let n1 = window.prompt("Primeira nota:")
+let n2 = window.prompt("Segunda nota:")
+let n3 = window.prompt("Terceira nota:")
+let n4 = window.prompt("Quarta nota:")
+const media = (n1*10/100 + n2*20/100 + n3*30/100 + n4*40/100)
+window.alert(`Sua média final ficou ${media.toFixed(2)}`)

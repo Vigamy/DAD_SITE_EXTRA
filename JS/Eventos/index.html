@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+    <h2>Clique (onclick)</h2>
+    <p class="btn" onclick="criarImg()">Mostrar imagem</p>
+    <p class="btn" onclick="apagarImg()">Apagar imagem</p>
+    <hr />
+    <hr />
+    <br /><br />
+
+    <!-- Tarefas -->
+    <ul id="lista-tarefas"></ul>
+    <br />
+    <div class="input">
+      <input type="text" placeholder="Nova tarefa" center id="tarefa" />
+    </div>
+    <div class="persistTarefas">
+      <p class="btnTarefa" onclick="criarTarefa()">Criar Tarefa</p>
+      <p class="btnTarefa" onclick="limparTarefas()">Limpar Tarefas</p>
+      <p class="btnTarefa" onclick="salvarTarefas()">Salvar Tarefas</p>
+    </div>
+
+    <br /><br />
+  </body>
+</html>
