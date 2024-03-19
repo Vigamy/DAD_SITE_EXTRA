@@ -42,9 +42,9 @@ function criarTarefa() {
     img.setAttribute("src", "./img/x.png");
     img.classList.add("xzinho");
     tarefa.appendChild(img);
-    img.addEventListener("click", ()=>{
+    img.addEventListener("click", () => {
       tarefa.remove();
-    })
+    });
 
     // adicionando tarefa a lista
     listaTarefas.appendChild(tarefa);
@@ -80,17 +80,21 @@ function restaurarTarefas() {
     tarefa.textContent = tarefasRest[i];
     console.log(tarefa);
     tarefa.classList.add("tarefas-style");
-    
+
     // criando o Xzin
     const img = document.createElement("img");
     img.setAttribute("src", "./img/x.png");
     img.classList.add("xzinho");
     tarefa.appendChild(img);
-    img.addEventListener("click", ()=>{
+    img.addEventListener("click", () => {
       tarefa.remove();
-      listaTarefas
-    })
-    
+      const indice = listaTarefasJS.indexOf(tarefa.textContent);
+      if (indice !== -1) {
+        listaTarefasJS.splice(i, 1);
+      }
+
+      console.log(listaTarefasJS);
+    });
 
     //adicionando o elemento
     listaTarefas.appendChild(tarefa);
