@@ -1,0 +1,53 @@
+body {
+  background-color: lightyellow;
+  user-select: none;
+}
+.item {
+  margin-top: 50px;
+  margin: auto;
+  /* border: solid 4px rgb(100, 255, 100); */
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1px 10px 1px 10px;
+  font-size: 30px;
+}
+.itemsBlock {
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: solid 4px rgb(255, 212, 133);
+  border-radius: 20px;
+}
+.btnItems {
+  display: inline-block;
+  width: fit-content;
+  margin: 8px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  padding: 5px;
+  border: solid 4px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 25px;
+}
+.btnItems:hover {
+  background-color: rgba(142, 97, 0, 0.479);
+}
+.ocupados {
+  background-color: orangered;
+}
+.vazios {
+  background-color: limegreen;
+  user-select: none;
+  cursor: pointer;
+}
+.vazios:hover {
+  background-color: rgb(38, 155, 38);
+}
+.selecionados {
+  background-color: royalblue;
+  user-select: none;
+  cursor: pointer;
+}

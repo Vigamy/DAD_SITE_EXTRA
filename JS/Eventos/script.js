@@ -87,7 +87,13 @@ function restaurarTarefas() {
     let tarefa = document.createElement("li");
     tarefa.textContent = tarefasRest[i];
     tarefa.classList.add("tarefas-style");
-    
+    for (let i = 0; i < tarefasRest.length; i++) {
+      if (tarefasConc[i] == tarefa.textContent) {
+        tarefa.classList.add("tarefa-concluida");
+        listaConcluidas.push(tarefa);
+      }
+    }
+
     // criando o Xzin
     const img = document.createElement("img");
     img.setAttribute("src", "./img/x.png");
@@ -106,7 +112,7 @@ function restaurarTarefas() {
       tarefa.classList.toggle("tarefa-concluida");
 
       //Adicionar na lista de concluidas
-      if (!listaConcluidas.includes(tarefa.textContent)) {
+      if (!listaConcluidas.includes(tarefa.textContent || classList == "tarefa-concluida")) {
         listaConcluidas.push(tarefa.textContent);
         console.log("Inclui\n" + listaConcluidas);
       } else {
