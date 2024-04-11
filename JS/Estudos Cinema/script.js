@@ -55,7 +55,7 @@ const addPipoca = document.getElementById("adcPipoca");
 const addRefri = document.getElementById("adcRefri");
 const rmvPipoca = document.getElementById("rmvPipoca");
 const rmvRefri = document.getElementById("rmvRefri");
-const qtdAssentos = document.getElementById("assentos");
+const mostrarAssentos = document.getElementById("assentos");
 //Adicionando eventos
 addPipoca.addEventListener("click", () => {
   numPipoca++;
@@ -79,6 +79,8 @@ rmvRefri.addEventListener("click", () => {
 });
 
 function resumoCompra() {
+  console.log(valorIngressos.textContent);
+
   valorIngressos.textContent = "R$ " + (assentos.length * 35).toFixed(2);
 
   valorPipoca.textContent = "R$ " + (numPipoca * 15).toFixed(2);
@@ -94,5 +96,15 @@ function resumoCompra() {
   qtdRefri.textContent = numRefrigerante;
   qtdTotal.textContent = assentos.length + numPipoca + numRefrigerante;
 
-  qtdAssentos.textContent = assentos;
+  console.log(mostrarAssentos);
+  if (assentos.length == 0){
+    mostrarAssentos.textContent = "Nenhum assento selecionado";
+  }else {
+    mostrarAssentos.textContent = assentos;
+  }
+
+  localStorage.setItem("numRefri", JSON.stringify(numRefrigerante));
+  localStorage.setItem("numPipoca", JSON.stringify(numPipoca));
+  localStorage.setItem("qtdAssentos", JSON.stringify(assentos.length));
+  console.log(numRefrigerante, numPipoca, assentos.length);
 }

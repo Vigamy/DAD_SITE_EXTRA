@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Absolut Cinema</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      td {
+        width: 10px;
+        border-radius: 5px;
+      }
+    </style>
     <script src="script.js" defer></script>
   </head>
   <body>
     <div>
       <h2 align="center">🍿 CineTech 🍿</h2>
     </div>
-    <table border="1" align="center" width="100%" height="300" id="cinema">
+    <table align="center" width="100%" height="300" id="cinema">
       <br />
       <br />
       <tr>
@@ -150,8 +156,8 @@
         <td><s>F20</s></td>
       </tr>
     </table>
-    <div style="margin-bottom: 30px; display: flex;">
-      <div style="margin: auto;">
+    <div style="margin-bottom: 30px; display: flex">
+      <div style="margin: auto">
         <h2 align="center">Resumo da compra</h2>
         <table border="1" width="40%">
           <tr>
@@ -183,25 +189,31 @@
       </div>
       <div class="itemsBlock">
         <div>
-          <p class="item">Pipoca</p>
-          <div style="text-align:center">
+          <b class="item">Pipoca</b>
+          <div style="text-align: center">
             <p id="adcPipoca" class="btnItems">+</p>
             <p id="rmvPipoca" class="btnItems">-</p>
-
           </div>
-          <p class="item">Refrigerante</p>
-          <div style="text-align:center">
+          <b class="item">Refri</b>
+          <div style="text-align: center">
             <p id="adcRefri" class="btnItems">+</p>
             <p id="rmvRefri" class="btnItems">-</p>
           </div>
         </div>
       </div>
     </div>
-    <table border="1" width="40%" height="50">
-      <tr>
-        <th>Assentos</th>
-        <td align="center" id="assentos">Nenhum assento selecionado</td>
-      </tr>
-    </table>
+    <div style="display: flex">
+      <table border="1" width="40%" height="50">
+        <tr>
+          <th>Assentos</th>
+          <td align="center" id="assentos">Nenhum assento selecionado</td>
+        </tr>
+      </table>
+      <a href="./finalizarCompra/finalizar.html" style="margin: auto"
+        ><button class="finCompra" onclick="finCompra()">
+          Finalizar Compra
+        </button></a
+      >
+    </div>
   </body>
 </html>

@@ -2,9 +2,19 @@ body {
   background-color: lightyellow;
   user-select: none;
 }
+.tabelaAssentos {
+  width: 40px;
+  border-radius: 10px;
+}
+.tabelaCompra {
+  border: solid black 2px;
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
 .item {
   margin-top: 50px;
-  margin: auto;
   /* border: solid 4px rgb(100, 255, 100); */
   border-radius: 4px;
   width: fit-content;
@@ -14,9 +24,9 @@ body {
 }
 .itemsBlock {
   margin: auto;
+  text-align: center;
   margin-top: 30px;
   padding: 20px;
-  border: solid 4px rgb(255, 212, 133);
   border-radius: 20px;
 }
 .btnItems {
@@ -25,15 +35,14 @@ body {
   margin: 8px;
   margin-bottom: 20px;
   background-color: transparent;
-  padding: 5px;
-  border: solid 4px;
+  padding: 2.5px 7.5px;
+  border: solid 3px;
   border-radius: 5px;
-
-  cursor: pointer;
   font-size: 25px;
 }
 .btnItems:hover {
   background-color: rgba(142, 97, 0, 0.479);
+  cursor: pointer;
 }
 .ocupados {
   background-color: orangered;
@@ -50,4 +59,16 @@ body {
   background-color: royalblue;
   user-select: none;
   cursor: pointer;
+}
+.finCompra {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.finCompra:hover {
+  border: solid 2px gray;
+}
+.mtdPagto {
+  margin: auto;
 }
