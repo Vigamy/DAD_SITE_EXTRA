@@ -97,4 +97,14 @@ code {
     width: 90%;
     display: block;
     font-weight: 700;
+    overflow: auto;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #426dff;
+  box-shadow: 1px 1px 5px black;
+  margin: 0 auto;
+  margin-top: 20px;
 }

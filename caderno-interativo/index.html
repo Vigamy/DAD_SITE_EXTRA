@@ -48,9 +48,20 @@
           <div class="exp invisivel">
             <h2>Mouseenter</h2>
             <p>Evento disparado quando o mouse passar sobre o elemento</p>
-            <div id="quadrado">
-              MOUSE
+            <div class="quadrado">
+              
             </div>
+            <pre>
+              <code>
+const quadradoEnter = document.getElementsByClassName("quadrado")[0]
+quadradoEnter.addEventListener("mouseenter", () => {
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+quadradoEnter.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
+                </code>
+            </pre>
           </div>
         </li>
         <li class="tema">Eventos</li>

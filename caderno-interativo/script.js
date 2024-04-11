@@ -8,3 +8,13 @@ for (let i = 0; i < temas.length; i++) {
         console.log(i);
     })
 }
+
+
+// Selecionando o mouse
+const quadradoEnter = document.getElementsByClassName("quadrado")[0]
+quadradoEnter.addEventListener("mouseenter", () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    quadradoEnter.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
