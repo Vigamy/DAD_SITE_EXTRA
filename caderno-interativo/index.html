@@ -48,23 +48,26 @@
           <div class="exp invisivel">
             <h2>Mouseenter</h2>
             <p>Evento disparado quando o mouse passar sobre o elemento</p>
-            <div class="quadrado">
-              
-            </div>
-            <pre>
-              <code>
-const quadradoEnter = document.getElementsByClassName("quadrado")[0]
-quadradoEnter.addEventListener("mouseenter", () => {
-const r = Math.floor(Math.random() * 256);
-const g = Math.floor(Math.random() * 256);
-const b = Math.floor(Math.random() * 256);
-quadradoEnter.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-})
-                </code>
-            </pre>
+            <div class="quadrado"></div>
           </div>
         </li>
-        <li class="tema">Eventos</li>
+        <li class="tema">
+          Keyup/Keydown
+          <div class="exp">
+            <h1>Keyup</h1>
+            <p>
+              O evento é disparado quando a tecla é solta, considerando o que foi escrito
+            </p>
+            <input type="text" name="" id="mayla" autocomplete="off"/>
+            <div class="produto inline-block">Abacate</div>
+            <div class="produto inline-block">Abacaxi</div>
+            <div class="produto inline-block">Banana</div>
+            <div class="produto inline-block">Bergamota</div>
+            <div class="produto inline-block">Caqui</div>
+            <div class="produto inline-block">Carambola</div>
+            <div class="produto inline-block">Damasco</div>
+          </div>
+        </li>
       </ul>
     </main>
     <!-- <h1>MENU DE GUIA</h1>
