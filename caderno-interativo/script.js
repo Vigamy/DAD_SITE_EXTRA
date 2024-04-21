@@ -59,7 +59,7 @@ campoDown.addEventListener("keyup", (e) => {
     e.preventDefault()
 
     if(e.ctrlKey && e.key == ' '){
-        console.log("bomdadsfw");
+        campoDown.value += "continua..."
     }
     
     lastKey = e.key
