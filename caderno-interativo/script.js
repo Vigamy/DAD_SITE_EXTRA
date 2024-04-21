@@ -4,11 +4,9 @@ const temas = document.getElementsByClassName("tema");
 // Adicionando eventos de clique
 for (let i = 0; i < temas.length; i++) {
     temas[i].addEventListener("click", (e) => {
-        console.log(e);
-        if(e.target.id !== "mayla") {
+        if(e.target == temas[i]) {
             temas[i].children[0].classList.toggle("invisivel");
         }
-        console.log(i);
     })
 }
 
@@ -50,4 +48,19 @@ campoMayla.addEventListener("keyup", () => {
         }
 
     }
+})
+
+const campoDown = document.getElementById("down")
+let lastKey
+
+campoDown.addEventListener("keyup", (e) => {
+    console.log(e.key);
+
+    e.preventDefault()
+
+    if(e.ctrlKey && e.key == ' '){
+        console.log("bomdadsfw");
+    }
+    
+    lastKey = e.key
 })
