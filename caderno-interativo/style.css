@@ -133,3 +133,27 @@ code {
 .inline-block {
   display: inline-block;
 }
+
+.sugestoes-container {
+  position: relative;
+}
+
+.lista-de-sugestoes {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; /* largura da caixa de sugestões */
+}
+
+.lista-de-sugestoes li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lista-de-sugestoes li:hover {
+  background-color: #f0f0f0;
+}
