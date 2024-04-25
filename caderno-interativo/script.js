@@ -52,13 +52,17 @@ campoMayla.addEventListener("keyup", () => {
 
 const campoDown = document.getElementById("down")
 let lastKey
+let palavra
 
-campoDown.addEventListener("keyup", (e) => {
+campoDown.addEventListener("keydown", (e) => {
+    // palavra = 
     console.log(e.key);
 
     e.preventDefault()
 
     if(e.ctrlKey && e.key == ' '){
+        // for(let i = 0; i < palavra.length; i++){ 
+        // }
         campoDown.value += "continua..."
     }
     
