@@ -1,0 +1,39 @@
+.fundo {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.dropdown {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    right: 8%;
+    border: none;
+    position: absolute;
+}
+
+.opcao {
+    color: white;
+    background-color: none;
+    border: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}

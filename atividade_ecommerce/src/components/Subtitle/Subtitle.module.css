@@ -1,0 +1,21 @@
+.fundo {
+    /* color: #DB4444; */
+}
+
+.container {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ret {
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DB4444;
+}
+
+.fundo {
+    color: #DB4444;
+}

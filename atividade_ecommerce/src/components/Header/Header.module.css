@@ -1,0 +1,74 @@
+.cabecalho {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: solid 1px black;
+}
+
+.campo {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.icone {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.shop {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+
+}
+
+.busca {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    padding: 10px 0px 10px 14px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.lupa {
+    background-color: #f5f5f5;
+    border-radius: 0px 4px 4px 0px;
+    padding: 8px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
